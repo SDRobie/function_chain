@@ -37,8 +37,8 @@ function requestColor (breed) {
 }
 
 //now chain
-requestName().then(function(nameStr) {
-  return requestBreed(nameStr);
+requestName().then(function(str) {
+  return requestBreed(str);
 }).then(function(breed){
   return requestColor(breed);
 }).then(function(color){
